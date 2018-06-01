@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">To-Do</string>
+
+    <!--facebook key-->
+    <string name="facebook_app_id">1906107442945056</string>
+    <string name="fb_login_protocol_scheme">fb1906107442945056</string>
+
+    <string name="server_client_id">241844678093-ubq3pi49mtsmuhg91j4qt4d0p2uo04jg.apps.googleusercontent.com</string>
+
+    <string name="shared_preference">com.madhav.kotlinsample.sharedPreference</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="mobile_no">Mobile no.</string>
+    <string name="register_text">Not Registered? <b><font fgcolor='#3B5998'> Register</font></b></string>
+    <string name="register">REGISTER</string>
+    <string name="login_text">Already Registered? <b><font fgcolor='#3B5998'> Login</font></b></string>
+    <string name="title_activity_home1">Home1Activity</string>
+</resources>

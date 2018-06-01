@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:id="@+id/save"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="Save"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:gravity="top"
+        android:paddingLeft="5dp"
+        android:focusableInTouchMode="true"
+        android:paddingTop="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:background="@drawable/login_bg"
+        android:id="@+id/todo_text"
+        android:hint="Enter item"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/status_header"
+        android:textColor="@color/facebook_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="17dp"
+        />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/status_group"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15dp"
+            android:id="@+id/pending_rb"
+            android:textColor="@color/facebook_color"
+            android:text="Pending"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15dp"
+            android:id="@+id/wip_rb"
+            android:textColor="@color/facebook_color"
+            android:text="WIP"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:textSize="15dp"
+            android:id="@+id/complete_rb"
+            android:textColor="@color/facebook_color"
+            android:text="Complete"
+            />
+    </RadioGroup>
+
+
+    
+</LinearLayout>

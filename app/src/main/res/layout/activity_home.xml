@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:andriod="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/menu_place"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/three_dot_option"
+            app:srcCompat="@drawable/ic_more_three_dots"
+            android:layout_alignParentRight="true"
+            android:rotation="90"
+            android:onClick="showPopup"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:id="@+id/recycler_view"
+        android:divider="@color/grey_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_text"
+        android:text="No To Do Items!"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:fontFamily="@font/lato_bold"
+        android:layout_centerInParent="true"
+        android:textColor="@color/facebook_color"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/create_new"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_gravity="bottom|end"
+        />
+</RelativeLayout>
